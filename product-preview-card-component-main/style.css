@@ -1,0 +1,158 @@
+@import url("https://fonts.google.com/specimen/Montserrat");
+@import url("https://fonts.google.com/specimen/Fraunces");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main{
+    border-radius: 10px;
+    margin-block-start: 10%;
+    margin-block-end: 50%;
+    background-color: hsl(0, 0%, 100%);
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+}
+
+.img__container{
+    width: 100%;
+}
+
+.img__container img:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img__container img:nth-of-type(2){
+    display: none;
+}
+
+main h4, main h2{
+    margin-inline-start: 1rem;
+    margin-inline-end: 10px;
+}
+
+main .content h4{
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #999;
+    margin-block-start: 12px;
+    margin-block-end: 10px;
+}
+
+main h2{
+    margin-block-end: 10px;
+}
+
+main p{
+    margin-block-end: 10px;
+    margin-inline-start: 1rem;
+    line-height: 22px;
+    color: #999;
+}
+
+main .buy{
+    margin-inline-start: 1rem;
+    font-size: 2rem;
+    padding-bottom: 22px;
+}
+
+main .buy div:nth-of-type(1) span:nth-of-type(1){
+    color: hsl(158, 36%, 37%);
+}
+
+main .buy div:nth-of-type(1) span:nth-of-type(2){
+    color: grey;
+    text-decoration: line-through;
+    font-size: 10pt;
+    padding-left: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+main .buy div:nth-of-type(2){
+    border-radius: 10px;
+    text-align: center;
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    margin-inline-end: 1rem;
+    margin-block-start: 12px;
+    padding:10px 0;
+    font-size: 1rem;
+}
+
+main .buy div:nth-of-type(2) span{
+    position: relative;
+    bottom: 4px;
+    text-align: center;
+    color:  hsl(0, 0%, 100%);
+}
+
+.buy img{
+    margin-inline-end: 10px;
+    margin-block-start: 2px;
+}
+
+@media (min-width:1440px) {
+    body{
+        height: 100vh;
+        padding-bottom: 10%;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 5px;
+        margin-inline-start: 20%;
+        margin-inline-end: 20%;
+        height: 60%;
+        width: 50%;
+    }
+
+    .img__container{
+        grid-column: 1;
+    }
+
+    .img__container img:nth-of-type(1){
+        display: none;
+    }
+
+    .img__container{
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-image: url("./images/image-product-desktop.jpg");
+        background-size: cover;
+    }
+
+    .content{
+        grid-column: 2;
+        padding: 10px;
+        font-size: 150%;
+    }
+
+    main h4{
+        margin-block-start: 15px;
+        margin-block-end: 10px;
+    }
+
+    main h2{
+        margin-block-end: 15px;
+        margin-inline-end: 12px;
+        line-height: 35px;
+    }
+
+    main p{
+        line-height: 30px;
+    }
+
+}
