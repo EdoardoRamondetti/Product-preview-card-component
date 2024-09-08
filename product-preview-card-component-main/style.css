@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Fraunces", serif;
     display: flex;
     justify-content: center;
     background-color: hsl(30, 38%, 92%);
@@ -19,6 +19,7 @@ main{
     background-color: hsl(0, 0%, 100%);
     margin-inline-start: 1rem;
     margin-inline-end: 1rem;
+    height: 50%;
 }
 
 .img__container{
@@ -42,22 +43,26 @@ main h4, main h2{
 }
 
 main .content h4{
-    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 5px;
     color: #999;
-    margin-block-start: 12px;
-    margin-block-end: 10px;
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+    font-size: 8pt;
 }
 
 main h2{
     margin-block-end: 10px;
+    font-weight: 900;
 }
 
 main p{
+    font-family: "Montserrat", sans-serif;
     margin-block-end: 10px;
     margin-inline-start: 1rem;
-    line-height: 22px;
+    line-height: 20px;
     color: #999;
+    font-size: 10pt;
 }
 
 main .buy{
@@ -68,6 +73,7 @@ main .buy{
 
 main .buy div:nth-of-type(1) span:nth-of-type(1){
     color: hsl(158, 36%, 37%);
+    font-weight: 800;
 }
 
 main .buy div:nth-of-type(1) span:nth-of-type(2){
@@ -102,6 +108,14 @@ main .buy div:nth-of-type(2) span{
     margin-block-start: 2px;
 }
 
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
 @media (min-width:1440px) {
     body{
         height: 100vh;
@@ -114,8 +128,8 @@ main .buy div:nth-of-type(2) span{
         column-gap: 5px;
         margin-inline-start: 20%;
         margin-inline-end: 20%;
-        height: 70%;
-        width: 50%;
+        height: 60%;
+        width: 45%;
     }
 
     .img__container{
@@ -146,13 +160,22 @@ main .buy div:nth-of-type(2) span{
     }
 
     main h2{
-        margin-block-end: 15px;
+        margin-block-end: 25px;
         margin-inline-end: 12px;
         line-height: 35px;
     }
 
     main p{
-        line-height: 30px;
+        line-height: 25px;
+        margin-inline-end: 100px;
+        font-size: 11pt;
     }
 
+    main .buy div:nth-of-type(1){
+        padding-bottom: 12px;
+    }
+
+    .h2__container{
+        padding-right: 90px !important;
+    }
 }
