@@ -97,7 +97,7 @@ main .buy div:nth-of-type(2) span{
     color:  hsl(0, 0%, 100%);
 }
 
-.buy img{
+.buy svg{
     margin-inline-end: 10px;
     margin-block-start: 2px;
 }
